@@ -1,0 +1,165 @@
+.posts{
+    flex: 9;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+/* Reset de estilos básicos para eliminar márgenes y rellenos predeterminados */
+body, h1, h2, p, ul, li, button {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    text-align: center;
+    padding: 20px;
+  }
+/* Estilo global */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+/* Encabezado */
+header {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    margin-right: 20px;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contenido principal */
+.hero {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 50px;
+    color: #304243;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #304243;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 20px;
+}
+
+button:hover {
+    background-color: #04292a;
+}
+
+
+
+/* Estilo para el campo de entrada */
+input[type="text"] {
+    width: 200px; /* Ancho del campo de entrada */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde del campo de entrada */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    outline: none; /* Elimina el resaltado al hacer clic */
+    transition: border-color 0.3s; /* Transición suave para el borde */
+}
+
+/* Estilo para el campo de entrada cuando se enfoca */
+input[type="text"]:focus {
+    border-color: #304243; /* Cambia el color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(0, 112, 209, 0.5); /* Sombra suave al enfocar */
+}
+
+
+/* Estilos para el modal */
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 10% auto;
+
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  
